@@ -1,0 +1,196 @@
+
+.container{
+    width:  100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7));
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+} 
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    
+
+}
+.tuitionpedia{
+    width: 50px;
+    cursor: pointer;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    
+}
+nav ul li a::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background:#f44336;
+   display: block;
+   margin:auto;
+   transition: 0.5s;
+    
+}
+nav ul li a:hover::after{
+
+    width: 100%;
+}
+.btnlogin{
+    display: inline-block;
+    padding: 8px,32px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    cursor:pointer;
+    transition: all ease .45s;
+}
+.btnlogin:hover{
+    transform: scale(1,1);
+    background: #fff;
+    border: 2px silid #fff;
+    color: #162928;
+}
+
+.row h3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #131212;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.row p{
+    color: #ffffff;
+}
+.feature-col{
+    flex-basis:40%;
+    background:#825959 ;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-left: 20px;
+    padding-top: 0;
+    padding-bottom:10%;
+    box-shadow: #000000;
+    box-sizing: border-box;
+    transition: 0.5s;
+   
+}
+.feature-col:hover{
+    box-shadow: 0 0 80px 0px rgba(9, 9, 9, 0.3);
+}
+.title{
+    height: 12cm;
+    width: 100%;
+    margin-top: 3cm;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.title img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+
+.tuition{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.tuition h1{
+    color: #000;
+    font-size: 28px;
+    padding-top: 1cm;
+    padding-bottom: 0cm;
+}
+.tuition a{
+    padding-bottom: 10cm;
+}
+.tuition p{
+    color: #000000;
+    font-size: 15px;
+}
+.tuition-col{
+    height: 300px;
+    width: 310px;
+   
+   
+}
+.cardBox {
+    position: relative;
+    width: 10px;
+    height: 0px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    
+  
+  }
+  
+
+.tuition-col  button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+   
+    background-color: #17d55d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a6147;
+}
+.boxx{
+    height: 42%;
+    width: 90%;
+    transition: 0.5s;
+    align-items: center;
+    background-color: rgb(149, 135, 135);
+}
+
+.tuition-col img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block;
+   
+   
+} 
+.main{
+    background-color: #786666;
+    height: 30px;
+}
+
+

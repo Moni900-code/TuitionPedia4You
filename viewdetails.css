@@ -1,0 +1,84 @@
+.container {
+    /* Add your container styles here */
+    /* For example: */
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: black;
+  }
+  
+  .boxed {
+    /* Add your boxed styles here */
+    /* For example: */
+    border: 1px solid #490a0a;
+    padding: 10px;
+   
+  }
+  
+  .row {
+    /* Add your row styles here */
+    /* For example: */
+    display: flex;
+    margin-right: 20px;
+
+  }
+  
+  .col-md-8 {
+    /* Add your column styles here */
+    /* For example: */
+    width: 66.66%;
+  }
+  
+  .sidebar {
+    /* Add your sidebar styles here */
+    /* For example: */
+    width: 33.33%;
+  }
+  
+  .authorbox {
+    /* Add your authorbox styles here */
+    /* For example: */
+    background-color: #0d193d;
+    padding: 10px;
+    color: white;
+    width: 420px;
+    height: 230px;
+  }
+.form{
+background-color:rgb(76, 81, 21);color: white;
+
+width: 95%;
+  }
+  .from-control{
+    height: 20px;
+  }
+  
+  .content {
+    /* Add your content styles here */
+    /* For example: */
+    margin-top: 20px;
+  }
+  
+  .blog-wrapper {
+    /* Add your blog-wrapper styles here */
+    /* For example: */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+
+  /* Add more CSS styles as per your requirements */
+  
+
+  .footer_box .container{
+    background-color: rgb(56, 56, 59);
+    color: white;
+  }
+  .row ul li{
+    color: rgb(193, 193, 193);
+    font-size: 22px;
+  }
+ .widget .list{
+    color: white;
+  }

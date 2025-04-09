@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutor portal</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="tutorportal.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <section class="flex">
+                <a href="tutorportal.html" class="logo">Tuitionpedia4You</a>
+
+                <form action="" method="post" class="search-form" required maxlength="100">
+                    <input type="text" name="search-box" placeholder="search tuition....">
+                    <button type="submit" class="fa fa-search" name="search_box"></button>
+                </form>
+
+                <div class="icons">
+                    <div id="menu-btn" class="fa fa-bars"></div>
+                    <div id="search-btn" class="fa fa-search"></div>
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+            
+                <div class="profile">
+                    <img src="lady.png" alt="">
+                    <h3>Jafrin</h3>
+                    <span>Tutor</span>
+                    <a href="profile.html" class="btn">View profile</a>
+                    <div class="flex-btn">
+                        <a href="login.html" class="option-btn">Login</a>
+                        <a href="registrations.html" class="option-btn">Register</a>
+                    </div>
+                </div>
+                    
+        
+            </section>
+        </header>
+
+        <!-- side bar starts -->
+        <div class="side-bar">
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+        <div class="profile">
+            <img src="lady.png" alt="">
+            <h3>Jafrin</h3>
+            <span>Tutor</span>
+            <a href="profile.html" class="btn">View profile</a>
+        </div>
+            <nav class="navbar">
+                <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+                <a href="#"><i class="fas fa-question"></i><span>About us</span></a>
+                <a href="#"><i class="fas fa-graduation-cap"></i><span>Tuitions</span></a>
+                <a href="#"><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a>
+
+            </nav>
+
+        </div>
+
+        <!-- side bar ends -->
+        <div class="col-xs-12">
+            <h1>Available Tuitions</h1>
+            Tuition Code : <script >
+            //     function getRandom(min,max){
+            //     let x=Math.floor(Math.random() * (max-min))+min ;
+            //     return x;
+            // }
+            // console.log(getRandom(10,20));
+            // var x= Math.random();
+            // console.log(+x);
+            document.write(Math.random()*10+1);
+            </script>
+            <a class="item-block" href="#">
+                <div  class="text-center"> <b>Dhaka University </b>Male Tutor Wanted
+                    in <b>Chittagong</b> </div>
+                <header class="boxx">
+                    <div> <img src="any.png"></div>
+                    <div class="hgroup">
+                        <h4>Class: 10</h4>
+                        <h5>Group: Science</h5>
+                        <h5>Medium: Bangla</h5>
+                        <h5><b>Subject: Phy,Chem,Math</b></h5>
+                        <h5><b>Salary: 5000 BDT</b></h5>
+                    </div>
+                    <div class="header-meta">
+                        <span class="location">Chittagong</span>
+                        <span class="label label-success">3 Days/Week</span>
+                        <span class="label label-danger">Time: 4:00pm</span>
+                        <span class="label label-warning">Duration: 1.5 Hours</span>
+                        <span class="label label-info">Media Fee : 35%</span>
+                    </div>
+                </header>
+            </a>
+    
+    
+            <button data-ng-click="gotoApplyPage(obj.tuitionCode)">Apply</button>
+    
+        </div>
+
+        <div class="col-xs-12">
+            <!-- <h1>Find Tutors: </h1> -->
+            Tuition Code : 1
+            <a class="item-block" href="#">
+                <div  class="text-center"> <b>Dhaka University </b>Male Tutor Wanted
+                    in <b>Chittagong</b> </div>
+                <header class="boxx">
+                    <div> <img src="any.png"></div>
+                    <div class="hgroup">
+                        <h4>Class: 10</h4>
+                        <h5>Group: Science</h5>
+                        <h5>Medium: Bangla</h5>
+                        <h5><b>Subject: Phy,Chem,Math</b></h5>
+                        <h5><b>Salary: 5000 BDT</b></h5>
+                    </div>
+                    <div class="header-meta">
+                        <span class="location">Chittagong</span>
+                        <span class="label label-success">3 Days/Week</span>
+                        <span class="label label-danger">Time: 4:00pm</span>
+                        <span class="label label-warning">Duration: 1.5 Hours</span>
+                        <span class="label label-info">Media Fee : 35%</span>
+                    </div>
+                </header>
+            </a>
+    
+    
+            <button data-ng-click="gotoApplyPage(obj.tuitionCode)">Apply</button>
+    
+        </div>
+
+
+
+
+
+
+
+
+
+        
+<!-- footer starts -->
+<footer class="footer">
+    &copy; copyright @ 2023 by <span>mr. web designer</span> | all rights reserved!
+</footer>
+<!-- footer ends -->
+        
+
+        <!-- custom js file link -->
+    <!-- <script src="script.js"></script> -->
+    </body>
+</html>

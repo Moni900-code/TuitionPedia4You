@@ -1,0 +1,637 @@
+<html lang="en">
+<head>
+ <title>search here</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.jquery.min.js" ></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.5/chosen.css">
+
+
+  <!-- search main bar -->
+
+	    <!-- Google Font -->
+		<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+		rel="stylesheet"
+	  />
+	  <!-- Stylesheet -->
+	  <link rel="stylesheet" href="filter.css" />
+
+    
+  <!-- end of search main bar -->
+
+
+
+<style type="text/css">
+ 
+body, td, th, p, div{
+	font-family: "Muli";
+	font-size: 16px;
+ 	line-height:1.5;
+	color:#411699;
+	text-align:left;
+}
+
+ 
+a:link {
+	text-decoration: none;
+	color: #3a2564;
+}
+a:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover {
+	text-decoration: none;
+	color: #c3b925;
+}
+a:active {
+	text-decoration: none;
+	color: #d1ddd1;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    
+
+}
+.tuitionpedia{
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    
+}
+nav ul li a::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background:#f44336;
+   display: block;
+   margin:auto;
+   transition: 0.5s;
+    
+}
+nav ul li a:hover::after{
+
+    width: 100%;
+}
+.btnlogin{
+    display: inline-block;
+    padding: 8px,32px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    cursor:pointer;
+    transition: all ease .45s;
+}
+.btnlogin:hover{
+    transform: scale(1,1);
+    background: #fff;
+    border: 2px silid #fff;
+    color: #162928;
+}
+ 
+ 
+</style>
+</head>              
+
+<body>
+    
+<!---------header sec------------------->
+
+<div class="row" style="background:#ffffff;">
+<div class="g1240">
+   <div class="g1240">
+        <div id='cssmenu'>
+            <div class="navbar">
+                <img src="image/tuitonpedia.jpg" class="tuitionpedia" style="border-radius: 50%;">
+                <nav>
+                    <ul>
+                        <li><a href="home.html" style="color: black;">HOMEPAGE</a></li>
+                        <li><a href="Registration.html" style="color: black;">REGISTRATION</a></li>
+                        <a href="login.html">                 
+                               <button type="button" class="btnlogin" style="color: black;">LOGIN</button>
+                        </a>
+                    </ul>
+                </nav>
+                
+            </div> 
+</div>
+</div>        
+ </div>          
+</div>
+
+
+<!--
+
+    div class="grid" style="color: #08fcbf;">
+<div class="g1140" style="color: rgb(74, 74, 119);">
+<div class="row">
+  <table width='100%'><tr><td width='50%'> <h2 style="text-align: center;color: #000;"> <strong>SEARCH TUITIONS</strong> </h2> </td> 
+		  </td></tr></table>
+		   <div class="row">    
+                    <div class="c3" style="background:#8d8c33; height:5px;width: 100%; margin-bottom: 30px;"></div>
+                
+</div>          
+</div>
+ 
+                          
+<div class="g1140x" style="background-color: #c8d29e; width: 50%;width: 100%;">
+	
+<div class="row">
+<div class="col">
+<center>
+ <hr/>
+ <select class="chosen" style="width: 50%; height: 30px;font-size: 30px; margin-top: 20px;color:green;">
+ <option value=""> All Location </option>
+ <option value='15022014215269'> BAGERHAT
+ </option><option value='15022014218853'> BANDARBAN
+ </option><option value='15022014221200'> BARGUNA
+ </option><option value='15022014220385'> BARISAL
+ </option><option value='15022014218657'> BHOLA
+ </option><option value='15022014216164'> BOGRA
+ </option><option value='15022014223008'> BRAHMANBARIA
+ </option><option value='15022014223275'> CHANDPUR
+ </option><option value='15022014220253'> CHAPAI NABABAGANJ
+ </option><option value='15022014219846'> CHITTAGONG
+ </option><option value='15022014220961'> CHUADANGA
+ </option><option value='15022014214578'> COMILLA
+ </option><option value='15022014216181'> COX'S BAZAR
+ </option><option value='15022014219906'> DHAKA 
+ </option><option value='15022014217791'> DINAJPUR
+ </option><option value='15022014220532'> FARIDPUR 
+ </option><option value='15022014221239'> FENI
+ </option><option value='15022014220388'> GAIBANDHA
+ </option><option value='15022014222087'> GAZIPUR
+ </option><option value='15022014219722'> GOPALGONJ
+ </option><option value='15022014219353'> HABIGANJ
+ </option><option value='15022014216669'> JAMALPUR 
+ </option><option value='15022014213648'> JESSORE
+ </option><option value='15022014218496'> JHALOKATI
+ </option><option value='15022014216174'> JHENAIDAHA
+ </option><option value='15022014220870'> JOYPURHAT
+ </option><option value='15022014222679'> KHAGRACHHARI
+ </option><option value='15022014217785'> KHULNA
+ </option><option value='15022014217117'> KISHORGONJ  
+ </option><option value='15022014217868'> KURIGRAM
+ </option><option value='15022014218642'> KUSHTIA
+ </option><option value='15022014219071'> LAKSHMIPUR
+ </option><option value='15022014215652'> LALMONIRHAT
+ </option><option value='15022014213995'> MADARIPUR 
+ </option><option value='15022014222279'> MAGURA
+ </option><option value='15022014220661'> MANIKGONJ 
+ </option><option value='15022014215609'> MAULVI BAZAR
+ </option><option value='15022014213934'> MEHERPUR
+ </option><option value='15022014222073'> MUNSHIGONJ 
+ </option><option value='15022014220624'> MYMENSINGH 
+ </option><option value='15022014215852'> NAOGAON
+ </option><option value='15022014216324'> NARAIL
+ </option><option value='15022014223344'> NARAYANGONJ 
+ </option><option value='15022014214065'> NARSINGDI 
+ </option><option value='15022014215614'> NATORE
+ </option><option value='15022014214884'> NETROKONA
+ </option><option value='15022014223077'> NILPHAMARI
+ </option><option value='15022014220857'> NOAKHALI
+ </option><option value='15022014222071'> PABNA
+ </option><option value='15022014223602'> PANCHAGARH
+ </option><option value='15022014217521'> PATUAKHALI
+ </option><option value='15022014218462'> PIROJPUR 
+ </option><option value='15022014217848'> RAJBARI 
+ </option><option value='15022014220090'> RAJSHAHI
+ </option><option value='15022014215219'> RANGAMATI 
+ </option><option value='15022014221229'> RANGPUR
+ </option><option value='15022014216937'> SATKHIRA 
+ </option><option value='15022014215661'> SHARIATPUR 
+ </option><option value='15022014220806'> SHERPUR 
+ </option><option value='15022014222923'> SIRAJGANJ 
+ </option><option value='15022014217943'> SUNAMGANJ
+ </option><option value='15022014220731'> SYLHET 
+ </option><option value='15022014219780'> TANGAIL 
+ </option><option value='15022014223052'> THAKURGAON 
+
+ </option>         
+</select>
+</center>
+    <script type="text/javascript">
+        $(".chosen").chosen();
+    </script>      
+</div>
+            
+<div class="col"></div></div>     
+   
+
+
+
+<br>
+    
+    <div class="row">
+    
+    	<div class="col">
+       <center>
+       <select name="pmediums" id="pmediums" class="chosen" style="width:50%; height: 30px;font-size: 19px; margin-bottom: 20px;color:green;" onChange="return showlistofclasses();"  >
+             <option value=""> Any Medium </option> 
+			<option value='5082014205030'  > Bangla Medium </option>
+            <option value='5082014200140'  > English Medium </option>
+            <option value='7062018063436'  > English Version </option>
+            <option value='29082018090397'  > British Curricular Activities </option>
+       
+        </select>
+       </center>
+     
+
+        <script type="text/javascript">
+            $(".chosen").chosen();
+        </script> 
+  </div>
+  
+        
+        
+<div class="col">
+<center>
+
+     <select  name="pclasses" id="pclasses" class="chosen" style="width:50%; height: 30px;font-size: 19px; margin-top: 20px;color:green;;" onChange="return showlistofSubjects();"  >
+          <option value=""> Any Class </option>   
+			
+ </option><option value='5082014203400'  > O Level </option>
+ <option value='22112015137725'  > Nursery </option>
+ <option value='5082014202990'  > Class  VIII </option>
+ <option value='5082014204510'  > Class I </option>
+ <option value='5082014210040'  > Class II </option>
+ <option value='5082014204440'  > Class III </option>
+ <option value='5082014204230'  > Class IV </option>
+ <option value='5082014208630'  > Class IX </option>
+ <option value='5082014209980'  > Class V </option>
+ <option value='5082014202050'  > Class VI </option>
+ <option value='5082014202200'  > Class VII </option>
+ <option value='5082014201630'  > Class X </option>
+ <option value='5082014202810'  > H.S.C </option>
+ <option value='5082014204270'  > S.S.C </option>
+ <option value='5082014211940'  > A Level </option>
+ <option value='23112015031071'  > Honors </option>
+ <option value='7062018076043'  > Class I
+ </option><option value='7062018076638'  > Class II
+ </option><option value='7062018077186'  > Class III
+ </option><option value='7062018079825'  > Class IV
+ </option><option value='7062018081807'  > Class IX
+ </option><option value='7062018074989'  > Class V
+ </option><option value='7062018078691'  > Class VI
+ </option><option value='7062018077355'  > Class VII
+ </option><option value='7062018073145'  > Class VIII
+ </option><option value='7062018078080'  > Class X
+ </option><option value='7062018076487'  > Class XI (HSC)
+ </option><option value='7062018080288'  > Class XII (HSC) </option>       
+ </select>
+         
+</center> 
+
+<script type="text/javascript">
+    $(".chosen").chosen();
+</script>  
+ </div>
+        
+            
+<br> 
+  
+  
+  
+  <div class="row">
+    <div class="col">
+            
+           <center>
+<select name="psubjects" id="psubjects" class="chosen"   style="width:50%; height: 30px;font-size: 19px; margin-top: 20px;color:green;;" >
+           <option value=""> All Subjects </option> 
+           <option value='5082014217380'> General Math </option><option value='27012015133068'  > ICT </option><option value='22112015135533'  > Multiple subjects </option><option value='11092014110100'  > Religion/ Islamiat </option><option value='26012015238360'  > Social Science </option><option value='22112015135783'  > 2 Subjects </option><option value='22112015137094'  > 3 Subjects </option><option value='22112015134671'  > 4 Subjects </option><option value='22112015134909'  > All Subject </option><option value='5082014215120'  > Bangla </option><option value='5082014220090'  > English </option><option value='5082014215500'  > Math </option><option value='26012015239225'  > Art </option><option value='5082014217230'  > Accounting </option><option value='5082014218400'  > Biology </option><option value='5082014214860'  > Chemistry </option><option value='5082014216200'  > Civics </option><option value='5082014216950'  > Computer Science </option><option value='15102015231183'  > Economics </option><option value='5082014216890'  > English Literature </option><option value='5082014222860'  > Finance </option><option value='16032015010910'  > General Science </option><option value='5082014218230'  > Higher Math </option><option value='5082014222210'  > History </option><option value='5082014219930'  > Islamic Studies </option><option value='5082014218940'  > Law </option><option value='5082014222330'  > Phsychology </option><option value='5082014219540'  > Physics </option><option value='5082014222090'  > Sociology </option>   </select>
+       
+           </center>
+            
+               <script type="text/javascript">
+            $(".chosen").chosen();
+        </script> 
+    </div>
+            
+    <div class="col">
+            
+        <center>
+              <select name="gender" id="gender" class="chosen"   style="width: 50%; height: 30px;font-size: 19px; margin-top: 20px;color:green;" >
+              <option value=""> Any Gender </option>
+              <option value="M"> Male </option>
+              <option value="F"> Female </option>
+              
+              </select>
+        </center>
+            
+              <script type="text/javascript">
+                $(".chosen").chosen();
+            </script> 
+    </div>
+  </div>  
+    
+    	
+ 
+ 
+ <br>
+ 
+ <div class="row">
+ 		<div class="col">
+        <center>
+             <select name="salaryrange" id="salaryrange" class="chosen"   style="width:50%; height: 30px;font-size: 19px; margin-top: 20px;color:green;" >
+        
+        <option value=""> Salary Range </option>
+        <option value='10082014217800'  > 1000-2000 tk </option><option value='10082014223300'  > 2500-3500 tk </option><option value='10082014218500'  > 4000-5000 tk </option><option value='10082014224400'  > 5500-6500 tk </option><option value='10082014223500'  > 7000-8000 tk </option><option value='10082014216900'  > 8500-9000 tk </option><option value='10082014225200'  > 9500-10000 tk </option><option value='10082014220400'  > 11500-1200 tk </option>        
+        </select>
+        </center>
+       
+
+        <script type="text/javascript">
+            $(".chosen").chosen();
+        </script> 
+        </div>
+        
+        
+ </div>
+ <div class="row">
+    <div class="col">
+   <center>
+     <select name="timerange" id="timerange" class="chosen"   style="width:50%; height: 30px;font-size: 19px; margin-top: 20px;color:green;" >
+   
+   <option value=""> Time Range </option>
+   <option value='10082014217800'  > 8am</option
+    ><option value='10082014223300'  > 9am </option>
+    <option value='10082014218500'  >10am </option>
+    <option value='10082014224400'  > 3pm</option>
+    <option value='10082014223500'  >4pm</option>
+    <option value='10082014216900'  > 5pm</option>
+    <option value='10082014225200'  > 6pm</option>
+    <option value='10082014220400'  > 7pm</option>       
+    <option value='10082014220400'  > 8pm</option>  
+   </select>
+   <div class="c3" style="background:#8d8c33; height:5px;margin-top: 20px;"></div>
+   </center>
+  
+
+   <script type="text/javascript">
+    $(".chosen").chosen();
+</script> 
+   </div>
+   
+   
+</div>
+
+
+    </div>
+    <div class="col text-center" >
+       <a href="avaiableTuition.html">
+        <button type="button" class="skyblue medium" name="searchtut" id="searchtut"style="background-color:green; height: 30px;width: 30%;font-size: 19px; margin-top: 20px;color:white;" onClick="return search_tutors_simple();"> <strong>Search Tutors</strong> </button>
+
+       </a>
+     
+ </div>
+    
+-->
+
+    
+<class class="main">
+            
+        
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="wrapper">
+                    <div id="search-container">
+                      <input
+                        type="search"
+                        id="search-input"
+                        placeholder="Search product name here.."
+                      />
+                      <button id="search">Search</button>
+                    </div>
+                    <div id="buttons">
+                      <button class="button-value" onclick="filterProduct('all')">All</button>
+                      <button class="button-value" onclick="filterProduct('Medical')">
+                        Medical
+                      </button>
+                      <button class="button-value" onclick="filterProduct('University')">
+                        University
+                      </button>
+                      <button class="button-value" onclick="filterProduct('EngineeringUniversity')">
+                        EngineeringUniversity
+                      </button>
+                      <button class="button-value" onclick="filterProduct('College')">
+                        College
+                      </button>
+                      <button class="button-value" onclick="filterProduct('OnlineTutions')">
+                        Online Tuitions
+                      </button>
+
+
+
+                      <select class="button-value" onchange="redirectToPage(this.value)">
+                        <option selected="selected" value="">Time</option>
+                        <option value="4pm">4 PM</option>
+                        <option value="5pm">5 PM</option>
+                        <option value="6pm">6 PM</option>
+                        <option value="7pm">7 PM</option>
+                        <option value="8pm">8 PM</option>
+                        <option value="7am">7 AM</option>
+                        <option value="8am">8 AM</option>
+                        <option value="9am">9 AM</option>
+                    </select>
+                    
+                    <script>
+                        function redirectToPage(value) {
+                            switch(value) {
+                                case '4pm':
+                                    window.location.href = '4pm.html';
+                                    break;
+                                case '5pm':
+                                    window.location.href = '5pm.html';
+                                    break;
+                                case '6pm':
+                                    window.location.href = '6.html';
+                                    break;
+                                    case '7pm':
+                                    window.location.href = '7.html';
+                                    break;
+                                case '8pm':
+                                    window.location.href = '8.html';
+                                    break;
+                                    case '7am':
+                                    window.location.href = '7.html';
+                                    break;
+                                case '8am':
+                                    window.location.href = '8.html';
+                                    break;
+                                    case '9am':
+                                    window.location.href = '9.html';
+                                    break;
+                                // add more cases for each option
+                                default:
+                                    // default url or action
+                            }
+                        }
+      </script>
+       <select class="button-value" onchange="redirectToPage(this.value)">
+        <option selected="selected" value="">Class</option>
+        <option value="4pm">10</option>
+        <option value="5pm">9</option>
+        <option value="6pm">11</option>
+        <option value="7pm">12</option>
+        <option value="8pm">1</option>
+        <option value="7am">2</option>
+        <option value="8am">8</option>
+        <option value="9am">3</option>
+        <option value="8pm">4</option>
+        <option value="7am">5</option>
+        <option value="8am">6</option>
+        <option value="9am">7</option>
+    </select>
+    
+    <script>
+        function redirectToPage(value) {
+            switch(value) {
+                case '4pm':
+                    window.location.href = '4pm.html';
+                    break;
+                case '5pm':
+                    window.location.href = '5pm.html';
+                    break;
+                case '6pm':
+                    window.location.href = '6.html';
+                    break;
+                    case '7pm':
+                    window.location.href = '7.html';
+                    break;
+                case '8pm':
+                    window.location.href = '8.html';
+                    break;
+                    case '7am':
+                    window.location.href = '7.html';
+                    break;
+                case '8am':
+                    window.location.href = '8.html';
+                    break;
+                    case '9am':
+                    window.location.href = '9.html';
+                    break;
+                // add more cases for each option
+                default:
+                    // default url or action
+            }
+        }
+</script>
+<select class="chosen" onchange="redirectToPage(this.value)">
+  <option selected="selected" value="">Class</option>
+  <option value="4pm">Dhaka</option>
+  <option value="5pm">Rajshahi</option>
+  <option value="6pm">Barisal</option>
+  <option value="7pm">SYLHET</option>
+  <option value="8pm">GOPALGONJ</option>
+  <option value="7am">SHARIATPUR</option>
+  <option value="8am">SATKHIRA</option>
+  <option value="9am">KHULNA</option>
+  <option value="8pm">KHAGRACHHARI</option>
+  <option value="7am">KISHORGONJ</option>
+  <option value="8am">KUSHTIA</option>
+  <option value="9am">MUNSHIGONJ</option>
+
+</select>
+
+<script>
+  function redirectToPage(value) {
+      switch(value) {
+          case '4pm':
+              window.location.href = '4pm.html';
+              break;
+          case '5pm':
+              window.location.href = '5pm.html';
+              break;
+          case '6pm':
+              window.location.href = '6.html';
+              break;
+              case '7pm':
+              window.location.href = '7.html';
+              break;
+          case '8pm':
+              window.location.href = '8.html';
+              case '7am':
+              window.location.href ='7.html';
+              break;
+          case '8am':
+              window.location.href = '8.html';
+              break;
+              case '9am':
+              window.location.href = '9.html';
+              break;
+          // add more cases for each option
+          default:
+              // default url or action
+      }
+  }
+</script><script type="text/javascript">
+  $(".chosen").chosen();
+</script>      
+
+
+</div>
+<div id="products"  class="p"></div>
+</div>
+
+
+
+
+                  <!-- Script -->
+                  <script src="filter.js"></script>
+                </body>
+            </div>
+            
+        </class>
+</div> 
+
+
+
+<div class="c4">
+    <div class='row style_border'> <h1 style="color: rgba(132, 45, 28, 0.723);"><strong> Help & Info:</strong> </h1><div class="row">
+            
+            
+            <div class="c3" style="background:#526d55; height:5px;"></div>
+            <div class="c9" style="background:#a81d1d; height:1px;"></div>
+</div> 
+<p style="color: black;"><strong>1. How search work ?</strong><br />
+Select the district and other tution related parameter and click search to get your desired tutors.</p>
+
+<p style="color: black;"><strong>2. If i dont get my desired tutor ?</strong><br />
+If you dont get your desired tutor then you can request for tutor by filling the form and fill the your tutor details then the info will be published on the website.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</html>
+
+
+
+
+
+ 

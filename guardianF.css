@@ -1,0 +1,190 @@
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+
+nav{
+    flex: auto;
+   
+    text-align: right;
+}
+
+
+
+  /* Navbar Styles */
+  .navbar {
+   
+    background-image:linear-gradient(rgba(255, 255, 255, 0.475),rgba(0, 0, 0, 0.7)), url(images/118.jpeg);
+  }
+  
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: #050000;
+  }
+
+  .loginbox
+  {
+      margin-top: 40px;
+      position: relative;
+      width: 890px;
+      height: 540px;
+      border-radius: 24px;
+      border: 3px solid rgba(0, 2, 4, 0.7);
+      display: flex;
+      align-items:center;
+      color: #000000;
+      top: 63%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 70px 30px;
+      background-image:linear-gradient(rgba(255, 255, 255, 0.475),rgba(57, 56, 57, 0.7));
+    }
+  .container-signup{
+   background-color:  #000;
+  }
+ 
+ .container-login h2{
+  text-align: center;
+
+ }
+  .loginbox p{
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      color: #002309;
+  
+  }
+  
+  .loginbox input
+  {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .loginbox input[type="text"],input[type="password"]
+  {
+      border: none;
+      border-bottom: 3px solid #000000;
+      background: transparent;
+      outline: none;
+      height: 40px;
+      color: #000000;
+      font-size: 16px;
+  }
+  .loginbox input[type="submit"]
+  {
+      border: none;
+      outline: none;
+      height: 40px;
+      background: #066422;
+      color: #ffffff;
+      font-size: 18px;
+      border-radius: 20px;
+  }
+  .loginbox input[type="submit"]:hover
+  {
+      cursor: pointer;
+      background:#fbfffc;
+      color: #000000;
+  }
+  .loginbox a
+  {
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 20px;
+      color: rgb(213, 8, 8);
+      
+  }
+  .loginbox a:hover
+  {
+      color: white;
+  }
+  
+
+  /* =========== clicking msg showing=========== */
+.popup{
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+  }
+  section.active .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  section.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal-box i {
+    font-size: 70px;
+    color: #4070f4;
+  }
+  .modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+  }
+  .modal-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+  .modal-box .buttons {
+    margin-top: 25px;
+  }
+  .modal-box button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 10px;
+  }
